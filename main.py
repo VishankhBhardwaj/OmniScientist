@@ -19,7 +19,7 @@ from langchain_classic.chains.combine_documents import create_stuff_documents_ch
 from langchain_classic.chains import create_retrieval_chain, create_history_aware_retriever
 from pinecone import Pinecone
 from tools import web_search, arxiv_search, wikipedia_search, wolfram_alpha, python_commands
-from langchain.agents import AgentExecutor, create_tool_calling_agent
+from langchain_classic.agents import AgentExecutor, create_tool_calling_agent
 
 
 class ChatBot:
