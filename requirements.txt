@@ -1,0 +1,16 @@
+langchain
+langchain_core
+python-dotenv
+langchain-community
+langchain-text-splitters
+ipykernel
+pypdf
+langchain_groq
+pinecone
+sentence_transformers
+langchain_huggingface
+langchain-pinecone
+pinecone-client
+wolframalpha
+bibtexparser
+langchain-tavily
