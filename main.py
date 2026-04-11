@@ -132,7 +132,7 @@ Always cite your sources when possible."""),
 
         return answer
 
-    def chat_with_tools(self, query: str) -> str:
+    # def chat_with_tools(self, query: str) -> str:
         """Chat using Agent with external tools (web search, arxiv, etc.)"""
         response = self.agent_executor.invoke({
             "input": query,

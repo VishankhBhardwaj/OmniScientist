@@ -29,7 +29,7 @@ with st.sidebar:
     # 1. Search Mode
     search_mode = st.radio(
         "Search Mode",
-        ["Standard RAG (Documents Only)", "Agent Mode (Web + Tools)"],
+        ["Standard RAG (Documents Only)"],
         help="Standard RAG focuses strictly on your uploaded papers. Agent Mode uses external tools like Web, Arxiv, and Wikipedia."
     )
     
@@ -90,8 +90,8 @@ if prompt := st.chat_input("Ask a question..."):
                 # Select bot function based on mode
                 if search_mode == "Standard RAG (Documents Only)":
                     response = st.session_state.bot.chat(prompt)
-                else:
-                    response = st.session_state.bot.chat_with_tools(prompt)
+                # else:
+                #     response = st.session_state.bot.chat_with_tools(prompt)
                 
                 st.markdown(response)
                 # Save assistant response
